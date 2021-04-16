@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  * @author SIPAQUE.RITA
  */
 public class Requerimiento4DAO {
-   private static final String SQL_SELECT = "SELECT ID, Nombre, Apellido, DPI, Tipo, Genero, FechaAlquiler, FechaCaducidad, FechaTarde, ImporteCargo, Total FROM tbl_proveedor";
+   private static final String SQL_SELECT = "SELECT ID, Nombre, Apellido, DPI, Tipo, Genero, FechaAlquiler, FechaCaducidad, FechaTarde, ImporteCargo, Total FROM tbl_tbl_registrosatrasados";
     private static final String SQL_INSERT = "INSERT INTO tbl_Registrosatrasados (ID, Nombre, Apellido, DPI, Tipo, Genero, FechaAlquiler, FechaCaducidad, FechaTarde, ImporteCargo, Total ) VALUES (?,?,?,?,?,?,?,?,?,?,?) ";
  
 // private static final String SQL_UPDATE = "UPDATE tbl_proveedor SET   nombre_proveedor= ?, direccion_proveedor= ?, contacto_proveedor= ?, telefono_proveedor= ?, nit_proveedor= ?,  email_proveedor= ?, estatus_proveedor= ?    WHERE PK_id_proveedor= ?";
