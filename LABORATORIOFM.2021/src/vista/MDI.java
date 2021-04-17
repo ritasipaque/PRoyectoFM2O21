@@ -11,6 +11,7 @@ package vista;
  */
 public class MDI extends javax.swing.JFrame {
  private Proceso4 nuevaventana1;
+  private  MDVD  MDVD;
 
     /**
      * Creates new form MDI
@@ -33,13 +34,6 @@ public class MDI extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu9 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenu10 = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
@@ -70,9 +64,9 @@ public class MDI extends javax.swing.JFrame {
         jMenu2.setText("Catalogos");
         jMenu2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
 
-        jMenu8.setText("Mantenimientos Ventas");
+        jMenu8.setText("Mantenimientos DVD");
 
-        jMenuItem3.setText("Mantenimineto Cliente");
+        jMenuItem3.setText("Mantenimineto DVD");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem3ActionPerformed(evt);
@@ -80,46 +74,7 @@ public class MDI extends javax.swing.JFrame {
         });
         jMenu8.add(jMenuItem3);
 
-        jMenuItem4.setText("Mantenimiento Acreedor");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu8.add(jMenuItem4);
-
         jMenu2.add(jMenu8);
-
-        jMenu9.setText("Mantenimientos Compras");
-
-        jMenuItem5.setText("Mantenimiento Producto");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu9.add(jMenuItem5);
-
-        jMenuItem6.setText("Mantenimiento Proveedor");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
-            }
-        });
-        jMenu9.add(jMenuItem6);
-
-        jMenu2.add(jMenu9);
-
-        jMenu10.setText("Mantenimientos Inventarios");
-        jMenu2.add(jMenu10);
-
-        jMenu1.setText("Archivo");
-        jMenu1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-
-        jMenu3.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jMenu1.add(jMenu3);
-
-        jMenu2.add(jMenu1);
 
         jMenuBar1.add(jMenu2);
 
@@ -191,26 +146,6 @@ public class MDI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
-
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
-
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
 
         // TODO add your handling code here:
@@ -227,6 +162,14 @@ public class MDI extends javax.swing.JFrame {
      jDesktopPane1.add(nuevaventana1); 
         
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        MDVD = new vista.MDVD();
+        MDVD.setVisible(true);
+        jDesktopPane1.add(MDVD);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -266,25 +209,18 @@ public class MDI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     // End of variables declaration//GEN-END:variables
 }
