@@ -14,77 +14,84 @@ import java.util.logging.Logger;
 public class Cliente {
     
     private int id_cliente;
-    private String nombre;
-    private String apellido;
+    private String nombre_cliente;
+    private String apellido_cliente;
     private int edad;
-    private String correo;
-    private String direccion;
-    private int telefono;
-    private String dpi;
+    private String CodigoCorreo;
+    private String CodigoDireccion;
+    private int CodigoTelefono;
+    private String DPI;
 
     public int getId_cliente() {
         return id_cliente;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre_cliente() {
+        return nombre_cliente;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellido_cliente() {
+        return apellido_cliente;
     }
 
     public int getEdad() {
         return edad;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getCodigoCorreo() {
+        return CodigoCorreo;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getCodigoDireccion() {
+        return CodigoDireccion;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public int getCodigoTelefono() {
+        return CodigoTelefono;
     }
 
-    public String getDpi() {
-        return dpi;
+    public String getDPI() {
+        return DPI;
     }
 
     public void setId_cliente(int id_cliente) {
         this.id_cliente = id_cliente;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre_cliente(String nombre_cliente) {
+        this.nombre_cliente = nombre_cliente;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellido_cliente(String apellido_cliente) {
+        this.apellido_cliente = apellido_cliente;
     }
 
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setCodigoCorreo(String CodigoCorreo) {
+        this.CodigoCorreo = CodigoCorreo;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setCodigoDireccion(String CodigoDireccion) {
+        this.CodigoDireccion = CodigoDireccion;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setCodigoTelefono(int CodigoTelefono) {
+        this.CodigoTelefono = CodigoTelefono;
     }
 
-    public void setDpi(String dpi) {
-        this.dpi = dpi;
+    public void setDPI(String DPI) {
+        this.DPI = DPI;
     }
+
+   @Override
+    public String toString() {
+        return "Cliente{" + "PK_id_cliente=" + id_cliente + ", nombre_cliente=" + nombre_cliente + ", apellido_cliente=" + apellido_cliente + ", edad=" + edad + ", CodigoCorreo=" + CodigoCorreo + ", CodigoDireccion=" + CodigoDireccion + ", CodigoTelefono=" + CodigoTelefono + ", DPI=" + DPI +  '}';
+    }
+
+    
   
     
     
